@@ -1,4 +1,4 @@
-﻿*,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -910,11 +910,9 @@ nav.nav-section {
   }
 }
 
-/* ==========================================================================
-   Acessibilidade Avançada
-   ========================================================================== */
 
-/* Skip-to-content link – visível apenas com foco via teclado */
+
+
 .skip-link {
   position: absolute;
   top: -100%;
@@ -934,7 +932,7 @@ nav.nav-section {
   top: 12px;
 }
 
-/* Reduzir movimento para usuários que preferem */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -946,13 +944,13 @@ nav.nav-section {
   }
 }
 
-/* Focus visível mais forte para navegação via teclado */
+
 :focus-visible {
   outline: 3px solid var(--purple);
   outline-offset: 2px;
 }
 
-/* Garantir tamanho mínimo de toque 44x44 em mobile */
+
 @media (max-width: 1024px) {
   .nav-item {
     min-height: 44px;
