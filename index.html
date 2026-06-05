@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ülife – Minhas UCs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/minhas-ucs.css" />
+</head>
+
+<body>
+
+    
+    <input type="checkbox" id="dark-check" aria-hidden="true" />
+
+    
+    <input type="checkbox" id="sidebar-check" aria-hidden="true" />
+    <label class="sidebar-overlay" for="sidebar-check" aria-hidden="true"></label>
+
+    
+    <header class="topbar" role="banner">
+        <a href="index.html" class="topbar-logo" aria-label="Ülife – Início">
+            <img src="img/logo-black.png" alt="Ülife" class="logo-img logo-img-black" />
+            <img src="img/logo-white.png" alt="Ülife" class="logo-img logo-img-white" />
+        </a>
+        <div class="search-bar" role="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
+        </div>
+        <div class="topbar-icons" role="toolbar" aria-label="Ações">
+            <button class="icon-btn" aria-label="Notificações">
+        <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;" />
+      </button>
+            <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro" role="switch">
+        <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+      </label>
+        </div>
+    </header>
+
+    
+    <div class="page-shell">
+
+    
+    <aside class="sidebar" role="navigation" aria-label="Menu principal">
+
+        <nav class="nav-section" aria-label="Principal">
+            <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
+            <a href="index.html" class="nav-item active" aria-current="page">
+                <img src="img/minhas-ucs-selected.png" alt="" class="nav-icon" aria-hidden="true" />
+                Minhas UCs
+            </a>
+            <a href="atividades.html" class="nav-item">
+                <img src="img/atividades.png" alt="" class="nav-icon" aria-hidden="true" />
+                Atividades
+            </a>
+            <a href="quadro-aulas.html" class="nav-item">
+                <img src="img/quadro-aulas.png" alt="" class="nav-icon" aria-hidden="true" />
+                Quadro de Aulas
+            </a>
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="nav-section" aria-label="Acadêmico">
+            <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
+            <a href="notas-faltas.html" class="nav-item">
+                <img src="img/aulas-faltas.png" alt="" class="nav-icon" aria-hidden="true" />
+                Notas e Faltas
+            </a>
+            <a href="#" class="nav-item">
+                <img src="img/biblioteca.png" alt="" class="nav-icon" aria-hidden="true" />
+                Biblioteca
+            </a>
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="nav-section" aria-label="Administrativo">
+            <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
+            <a href="secretaria-virtual.html" class="nav-item">
+                <img src="img/secretaria.png" alt="" class="nav-icon" aria-hidden="true" />
+                Secretaria Virtual
+            </a>
+            <a href="#" class="nav-item">
+                <img src="img/documentos.png" alt="" class="nav-icon" aria-hidden="true" />
+                Documentos
+            </a>
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="nav-section" aria-label="Perfil">
+            <p class="nav-label" aria-hidden="true">PERFIL</p>
+            <a href="#" class="nav-item">
+                <img src="img/perfil.png" alt="" class="nav-icon" aria-hidden="true" />
+                Meu Perfil
+            </a>
+            <a href="#" class="nav-item">
+                <img src="img/config.png" alt="" class="nav-icon" aria-hidden="true" />
+                Configurações
+            </a>
+            <a href="#" class="nav-item">
+                <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
+                Ajuda
+            </a>
+        </nav>
+    </aside>
+
+    
+    <div class="main-wrapper">
+
+        
+        <div class="topbar-mobile-row" aria-label="Cabeçalho mobile">
+            <label class="sidebar-toggle-mobile" for="sidebar-check" aria-label="Abrir menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </label>
+            <div class="topbar-mobile-logo">
+                <a href="index.html" aria-label="Ülife – Início">
+                    <img src="img/logo-black.png" alt="Ülife" class="logo-img logo-img-black" />
+                    <img src="img/logo-white.png" alt="Ülife" class="logo-img logo-img-white" />
+                </a>
+            </div>
+            <div class="topbar-mobile-actions">
+                <button class="icon-btn has-dot" aria-label="Notificações">
+          <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+        </button>
+                <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro">
+          <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+        </label>
+            </div>
+        </div>
+
+        
+        <div class="topbar-mobile-search" role="search">
+            <div class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
+            </div>
+        </div>
+
+        
+        <main class="content" id="main-content">
+
+            
+            <div class="page-header">
+                <div>
+                    <h1 class="page-title">Minhas UCs</h1>
+                    <p class="page-subtitle">Gerencie seu progresso acadêmico e acesse seus materiais de estudo clicando na UC.</p>
+                </div>
+                <div class="page-filters" role="group" aria-label="Filtros">
+                    <div class="filter-group">
+                        <label class="filter-label" for="filter-periodo">PERÍODO</label>
+                        <div class="select-wrap">
+                            <select id="filter-periodo" aria-label="Período">
+                                <option>2026.1 (Atual)</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label" for="filter-status">STATUS</label>
+                        <div class="select-wrap">
+                            <select id="filter-status" aria-label="Status">
+                                <option>Todas</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <section aria-label="Disciplinas em andamento e avaliações">
+                <ul class="cards-grid" role="list">
+
+                    
+                    <li role="listitem">
+                        <a href="conteudo.html" class="uc-card" aria-label="Algoritmos Avançados – Em Andamento, 75% concluído">
+                            <div class="card-banner card-purple">
+                                <div class="card-banner-content">
+                                    <div class="card-icon-title">
+                                        <span class="card-banner-icon" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                                        </span>
+                                        <span class="card-banner-label">TERMINAL</span>
+                                    </div>
+                                </div>
+                                <span class="card-status status-andamento">EM ANDAMENTO</span>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Algoritmos Avançados</h2>
+                                <p class="card-teacher">Profª. Dra. Helena Silva</p>
+                                <div class="card-progress" role="group" aria-label="Progresso da disciplina">
+                                    <div class="progress-header"><span>Progresso</span><span>75%</span></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-fill progress-purple" style="width:75%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-next">
+                                        <span class="card-next-label">PRÓXIMO:</span>
+                                        <span class="card-next-value">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                            Programação Dinâmica
+                                        </span>
+                                    </div>
+                                    <button class="btn-more" aria-label="Mais opções">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    
+                    <li role="listitem">
+                        <a href="conteudo.html" class="uc-card" aria-label="Princípios de UX/UI – Em Andamento, 82% concluído">
+                            <div class="card-banner card-teal">
+                                <div class="card-banner-content">
+                                    <div class="card-icon-title">
+                                        <span class="card-banner-icon" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6" cy="17" r="2.5"/></svg>
+                                        </span>
+                                        <span class="card-banner-label">PALETTE</span>
+                                    </div>
+                                </div>
+                                <span class="card-status status-andamento">EM ANDAMENTO</span>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Princípios de UX/UI</h2>
+                                <p class="card-teacher">Prof. Marcus Vinícius</p>
+                                <div class="card-progress" role="group" aria-label="Progresso da disciplina">
+                                    <div class="progress-header"><span>Progresso</span><span>82%</span></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-fill progress-teal" style="width:82%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-next">
+                                        <span class="card-next-label">PRÓXIMO:</span>
+                                        <span class="card-next-value">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                                            Testes de Usabilidade
+                                        </span>
+                                    </div>
+                                    <button class="btn-more" aria-label="Mais opções">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    
+                    <li role="listitem">
+                        <a href="conteudo.html" class="uc-card" aria-label="Banco de Dados Relacionais – Concluído, 100%">
+                            <div class="card-banner card-orange">
+                                <div class="card-banner-content">
+                                    <div class="card-icon-title">
+                                        <span class="card-banner-icon" aria-hidden="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                        </span>
+                                        <span class="card-banner-label">DATABASE</span>
+                                    </div>
+                                </div>
+                                <span class="card-status status-concluido">CONCLUÍDO</span>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Banco de Dados Relacionais</h2>
+                                <p class="card-teacher">Prof. Dr. Ricardo J.</p>
+                                <div class="card-progress" role="group" aria-label="Progresso da disciplina">
+                                    <div class="progress-header"><span>Progresso</span><span>100%</span></div>
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-fill progress-orange" style="width:100%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <span class="badge-concluido" aria-label="Disciplina concluída">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                                        CONCLUÍDO
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    
+                    <li role="listitem">
+                        <a href="conteudo.html" class="uc-card uc-card-dark" aria-label="Algoritmos Avançados – Avaliação pendente, A2 Prova Online">
+                            <div class="card-banner card-dark-banner">
+                                <span class="card-banner-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                                </span>
+                                <span class="card-banner-label">AVALIAÇÃO</span>
+                                <span class="card-status status-pendente">PENDENTE</span>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Algoritmos Avançados</h2>
+                                <span class="card-link">→ A2 – Prova Online</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    
+                    <li role="listitem">
+                        <a href="conteudo.html" class="uc-card uc-card-dark" aria-label="Princípios de UX/UI – Avaliação pendente, A2 Prova Online">
+                            <div class="card-banner card-dark-banner">
+                                <span class="card-banner-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="17" r="2.5"/><circle cx="6" cy="17" r="2.5"/></svg>
+                                </span>
+                                <span class="card-banner-label">AVALIAÇÃO</span>
+                                <span class="card-status status-pendente">PENDENTE</span>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Princípios de UX/UI</h2>
+                                <span class="card-link">→ A2 – Prova Online</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    
+                    <li role="listitem">
+                        <a href="conteudo.html" class="uc-card uc-card-dark" aria-label="Banco de Dados Relacionais – Avaliação pendente, A2 Prova Online">
+                            <div class="card-banner card-dark-banner">
+                                <span class="card-banner-icon" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                </span>
+                                <span class="card-banner-label">AVALIAÇÃO</span>
+                                <span class="card-status status-pendente">PENDENTE</span>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Banco de Dados Relacionais</h2>
+                                <span class="card-link">→ A2 – Prova Online</span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+
+        </main>
+
+        
+        <footer class="footer" role="contentinfo">
+            <small>© 2026 Ânima Educação – Todos os direitos reservados.</small>
+            <nav class="footer-links" aria-label="Links institucionais">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="#">Ajuda</a>
+                <a href="#">Institucional</a>
+            </nav>
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+</html>

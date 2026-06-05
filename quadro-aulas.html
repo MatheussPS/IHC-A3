@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Úlife – Quadro de Aulas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/quadro-aulas.css" />
+</head>
+
+<body>
+
+  
+  <input type="checkbox" id="dark-check" aria-hidden="true" />
+
+  
+  <input type="checkbox" id="sidebar-check" aria-hidden="true" />
+
+  
+  <label
+    class="sidebar-overlay"
+    for="sidebar-check"
+    aria-hidden="true"
+  ></label>
+
+  
+  <header class="topbar" role="banner">
+
+    <a
+      href="index.html"
+      class="topbar-logo"
+      aria-label="Úlife – Início"
+    >
+
+      <img
+        src="img/logo-black.png"
+        alt="Úlife"
+        class="logo-img logo-img-black"
+      />
+
+      <img
+        src="img/logo-white.png"
+        alt="Úlife"
+        class="logo-img logo-img-white"
+      />
+
+    </a>
+
+    <div class="search-bar" role="search">
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="15"
+        height="15"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+
+      <input
+        type="search"
+        placeholder="Pesquisar disciplinas..."
+        aria-label="Pesquisar disciplinas"
+      />
+
+    </div>
+
+    <div class="topbar-icons" role="toolbar" aria-label="Ações">
+
+      <button class="icon-btn" aria-label="Notificações">
+        <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;" />
+      </button>
+
+      <label
+        class="dark-toggle"
+        for="dark-check"
+        aria-label="Alternar tema escuro"
+        role="switch"
+      >
+        <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+      </label>
+
+    </div>
+
+  </header>
+
+  
+  <div class="page-shell">
+
+    
+  <aside class="sidebar" role="navigation" aria-label="Menu principal">
+
+    <nav class="nav-section" aria-label="Principal">
+      <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
+      <a href="index.html" class="nav-item">
+                <img src="img/minhas-ucs.png" alt="" class="nav-icon" aria-hidden="true" />
+                Minhas UCs
+            </a>
+      <a href="atividades.html" class="nav-item">
+                <img src="img/atividades.png" alt="" class="nav-icon" aria-hidden="true" />
+                Atividades
+            </a>
+      <a href="quadro-aulas.html" class="nav-item active" aria-current="page">
+                <img src="img/quadro-aulas.png" alt="" class="nav-icon" aria-hidden="true" />
+                Quadro de Aulas
+            </a>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <nav class="nav-section" aria-label="Acadêmico">
+      <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
+      <a href="notas-faltas.html" class="nav-item">
+                <img src="img/aulas-faltas.png" alt="" class="nav-icon" aria-hidden="true" />
+                Notas e Faltas
+            </a>
+      <a href="#" class="nav-item">
+        <img src="img/biblioteca.png" alt="" class="nav-icon" aria-hidden="true" />
+        Biblioteca
+      </a>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <nav class="nav-section" aria-label="Administrativo">
+      <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
+      <a href="secretaria-virtual.html" class="nav-item">
+                <img src="img/secretaria.png" alt="" class="nav-icon" aria-hidden="true" />
+                Secretaria Virtual
+            </a>
+      <a href="#" class="nav-item">
+        <img src="img/documentos.png" alt="" class="nav-icon" aria-hidden="true" />
+        Documentos
+      </a>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <nav class="nav-section" aria-label="Perfil">
+      <p class="nav-label" aria-hidden="true">PERFIL</p>
+      <a href="#" class="nav-item">
+        <img src="img/perfil.png" alt="" class="nav-icon" aria-hidden="true" />
+        Meu Perfil
+      </a>
+      <a href="#" class="nav-item">
+        <img src="img/config.png" alt="" class="nav-icon" aria-hidden="true" />
+        Configurações
+      </a>
+      <a href="#" class="nav-item">
+        <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
+        Ajuda
+      </a>
+    </nav>
+  </aside>
+
+    
+    <div class="main-wrapper">
+
+      
+      <div
+        class="topbar-mobile-row"
+        aria-label="Cabeçalho mobile"
+      >
+
+        <label
+          class="sidebar-toggle-mobile"
+          for="sidebar-check"
+          aria-label="Abrir menu"
+        >
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+
+        </label>
+
+        <div class="topbar-mobile-logo">
+
+          <a
+            href="index.html"
+            aria-label="Úlife – Início"
+          >
+
+            <img
+              src="img/logo-black.png"
+              alt="Úlife"
+              class="logo-img logo-img-black"
+            />
+
+            <img
+              src="img/logo-white.png"
+              alt="Úlife"
+              class="logo-img logo-img-white"
+            />
+
+          </a>
+
+        </div>
+
+        <div class="topbar-mobile-actions">
+
+          <button
+            class="icon-btn has-dot"
+            aria-label="Notificações"
+          >
+            <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+          </button>
+
+          <label
+            class="dark-toggle"
+            for="dark-check"
+            aria-label="Alternar tema escuro"
+          >
+        <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+      </label>
+
+        </div>
+      </div>
+
+      
+      <div class="topbar-mobile-search" role="search">
+
+        <div class="search-bar">
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+
+          <input
+            type="search"
+            placeholder="Pesquisar disciplinas..."
+            aria-label="Pesquisar disciplinas"
+          />
+
+        </div>
+      </div>
+
+      
+      <main class="content">
+
+        <div class="page-header">
+
+          <div>
+
+            <h1 class="page-title">
+              Quadro de Aulas
+            </h1>
+
+            <p class="page-subtitle">
+              Visualize e gerencie seus compromissos acadêmicos
+            </p>
+
+          </div>
+
+          <div class="page-filters">
+
+            <div class="filter-group">
+
+              <label class="filter-label">
+                PERÍODO
+              </label>
+
+              <div class="select-wrap">
+                <select>
+                  <option>2026.1 (Atual)</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="filter-group">
+
+              <label class="filter-label">
+                STATUS
+              </label>
+
+              <div class="select-wrap">
+                <select>
+                  <option>Todas</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        
+        <section class="week-section">
+
+          <h2 class="section-month">
+            Junho
+            <span class="year">2026</span>
+          </h2>
+
+          <div class="week-grid">
+
+            
+            <div class="day-col">
+
+              <div class="day-header">
+                <span class="day-name">Segunda</span>
+                <span class="day-num">1</span>
+              </div>
+
+              <div class="day-card">
+
+                <div class="day-card-icon">
+                  <img
+                    src="img/student-class.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <span class="day-card-type">
+                  Presencial
+                </span>
+
+                <div class="day-card-divider"></div>
+
+                <span class="day-card-time">
+                  19:00 – 21:50
+                </span>
+
+                <span class="day-card-subject">
+                  Algoritmos e Programação
+                </span>
+
+                <span class="day-card-location">
+                  Mooca – Inovação Digital · H – 1º Andar · 102H
+                </span>
+
+                <span class="day-card-teacher">
+                  Marcus Vinícius
+                </span>
+
+              </div>
+
+            </div>
+
+            
+            <div class="day-col">
+
+              <div class="day-header">
+                <span class="day-name">Terça</span>
+                <span class="day-num">2</span>
+              </div>
+
+              <div class="day-card">
+
+                <div class="day-card-icon">
+                  <img
+                    src="img/student-class.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <span class="day-card-type">
+                  Presencial
+                </span>
+
+                <div class="day-card-divider"></div>
+
+                <span class="day-card-time">
+                  19:00 – 21:50
+                </span>
+
+                <span class="day-card-subject">
+                  Algoritmos e Programação
+                </span>
+
+                <span class="day-card-location">
+                  Mooca – Inovação Digital · H – 1º Andar · 102H
+                </span>
+
+                <span class="day-card-teacher">
+                  Marcus Vinícius
+                </span>
+
+              </div>
+
+            </div>
+
+            
+            <div class="day-col">
+
+              <div class="day-header">
+                <span class="day-name">Quarta</span>
+                <span class="day-num">3</span>
+              </div>
+
+              <div class="day-card day-card-empty">
+
+                <div class="day-card-icon">
+                  <img
+                    src="img/student-class.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <span class="day-card-type day-card-type-empty">
+                  Sem Aula
+                </span>
+
+              </div>
+
+            </div>
+
+            
+            <div class="day-col">
+
+              <div class="day-header day-header-today">
+                <span class="day-name">Quinta</span>
+                <span class="day-num">4</span>
+              </div>
+
+              <div class="day-card day-card-today">
+
+                <div class="day-card-icon">
+                  <img
+                    src="img/student-class.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <span class="day-card-type">
+                  Presencial
+                </span>
+
+                <div class="day-card-divider"></div>
+
+                <span class="day-card-time">
+                  19:00 – 21:50
+                </span>
+
+                <span class="day-card-subject">
+                  Interação Humano Computador e UX
+                </span>
+
+                <span class="day-card-location">
+                  Mooca – Inovação Digital · H – 1º Andar · 102H
+                </span>
+
+                <span class="day-card-teacher">
+                  José Victor
+                </span>
+
+              </div>
+
+            </div>
+
+            
+            <div class="day-col">
+
+              <div class="day-header">
+                <span class="day-name">Sexta</span>
+                <span class="day-num">5</span>
+              </div>
+
+              <div class="day-card">
+
+                <div class="day-card-icon">
+                  <img
+                    src="img/student-class.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <span class="day-card-type">
+                  Presencial
+                </span>
+
+                <div class="day-card-divider"></div>
+
+                <span class="day-card-time">
+                  19:50 – 21:50
+                </span>
+
+                <span class="day-card-subject">
+                  Interação Humano Computador e UX
+                </span>
+
+                <span class="day-card-location">
+                  Mooca – Inovação Digital · H – 1º Andar · 102H
+                </span>
+
+                <span class="day-card-teacher">
+                  José Victor
+                </span>
+
+              </div>
+
+            </div>
+
+            
+            <div class="day-col">
+
+              <div class="day-header">
+                <span class="day-name">Sábado</span>
+                <span class="day-num">6</span>
+              </div>
+
+              <div class="day-card day-card-empty">
+
+                <div class="day-card-icon">
+                  <img
+                    src="img/student-class.png"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </div>
+
+                <span class="day-card-type day-card-type-empty">
+                  Sem Aula
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        
+        <div class="bottom-row">
+
+          
+          <div class="mini-calendar">
+
+            <h3 class="mini-cal-title">
+              Junho 2026
+            </h3>
+
+            <table class="cal-table">
+
+              <thead>
+
+                <tr>
+                  <th>Seg</th>
+                  <th>Ter</th>
+                  <th>Qua</th>
+                  <th>Qui</th>
+                  <th>Sex</th>
+                  <th>Sáb</th>
+                  <th>Dom</th>
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td class="cal-today">4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+
+                <tr>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                </tr>
+
+                <tr>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                </tr>
+
+                <tr>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+
+                <tr>
+                  <td>29</td>
+                  <td>30</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+          
+          <div class="compromissos-box">
+
+            <h3 class="compromissos-title">
+              Compromissos
+            </h3>
+
+            <p class="compromissos-empty">
+              Nenhum compromisso para hoje.
+            </p>
+
+          </div>
+
+        </div>
+
+      </main>
+
+      
+      <footer class="footer">
+
+        <span>
+          © 2026 Ânima Educação – Todos os direitos reservados.
+        </span>
+
+        <div class="footer-links">
+
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Ajuda</a>
+          <a href="#">Institucional</a>
+
+        </div>
+
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>

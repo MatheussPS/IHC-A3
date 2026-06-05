@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Úlife – Atividades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/atividades.css" />
+</head>
+<body>
+
+  
+  <input type="checkbox" id="dark-check" aria-hidden="true" />
+
+  
+  <input type="checkbox" id="sidebar-check" aria-hidden="true" />
+
+  
+  <label class="sidebar-overlay" for="sidebar-check" aria-hidden="true"></label>
+
+  
+  <header class="topbar" role="banner">
+    <a href="index.html" class="topbar-logo" aria-label="Úlife – Início">
+      <img src="img/logo-black.png" alt="Úlife" class="logo-img logo-img-black" />
+      <img src="img/logo-white.png" alt="Úlife" class="logo-img logo-img-white" />
+    </a>
+
+    <div class="search-bar" role="search">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+
+      <input
+        type="search"
+        placeholder="Pesquisar disciplinas..."
+        aria-label="Pesquisar disciplinas"
+      />
+    </div>
+
+    <div class="topbar-icons" role="toolbar" aria-label="Ações">
+      <button class="icon-btn" aria-label="Notificações">
+        <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;" />
+      </button>
+
+      <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro" role="switch">
+        <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+      </label>
+    </div>
+  </header>
+
+  <div class="page-shell">
+
+    
+  <aside class="sidebar" role="navigation" aria-label="Menu principal">
+
+    <nav class="nav-section" aria-label="Principal">
+      <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
+      <a href="index.html" class="nav-item">
+                <img src="img/minhas-ucs.png" alt="" class="nav-icon" aria-hidden="true" />
+                Minhas UCs
+            </a>
+      <a href="atividades.html" class="nav-item active" aria-current="page">
+                <img src="img/atividades-selected.png" alt="" class="nav-icon" aria-hidden="true" />
+                Atividades
+            </a>
+      <a href="quadro-aulas.html" class="nav-item">
+                <img src="img/quadro-aulas.png" alt="" class="nav-icon" aria-hidden="true" />
+                Quadro de Aulas
+            </a>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <nav class="nav-section" aria-label="Acadêmico">
+      <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
+      <a href="notas-faltas.html" class="nav-item">
+                <img src="img/aulas-faltas.png" alt="" class="nav-icon" aria-hidden="true" />
+                Notas e Faltas
+            </a>
+      <a href="#" class="nav-item">
+        <img src="img/biblioteca.png" alt="" class="nav-icon" aria-hidden="true" />
+        Biblioteca
+      </a>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <nav class="nav-section" aria-label="Administrativo">
+      <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
+      <a href="secretaria-virtual.html" class="nav-item">
+                <img src="img/secretaria.png" alt="" class="nav-icon" aria-hidden="true" />
+                Secretaria Virtual
+            </a>
+      <a href="#" class="nav-item">
+        <img src="img/documentos.png" alt="" class="nav-icon" aria-hidden="true" />
+        Documentos
+      </a>
+    </nav>
+
+    <div class="nav-divider"></div>
+
+    <nav class="nav-section" aria-label="Perfil">
+      <p class="nav-label" aria-hidden="true">PERFIL</p>
+      <a href="#" class="nav-item">
+        <img src="img/perfil.png" alt="" class="nav-icon" aria-hidden="true" />
+        Meu Perfil
+      </a>
+      <a href="#" class="nav-item">
+        <img src="img/config.png" alt="" class="nav-icon" aria-hidden="true" />
+        Configurações
+      </a>
+      <a href="#" class="nav-item">
+        <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
+        Ajuda
+      </a>
+    </nav>
+  </aside>
+
+    
+    <div class="main-wrapper">
+
+      
+      <div class="topbar-mobile-row" aria-label="Cabeçalho mobile">
+
+        <label class="sidebar-toggle-mobile" for="sidebar-check" aria-label="Abrir menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </label>
+
+        <div class="topbar-mobile-logo">
+          <a href="index.html" aria-label="Úlife – Início">
+            <img src="img/logo-black.png" alt="Úlife" class="logo-img logo-img-black" />
+            <img src="img/logo-white.png" alt="Úlife" class="logo-img logo-img-white" />
+          </a>
+        </div>
+
+        <div class="topbar-mobile-actions">
+          <button class="icon-btn has-dot" aria-label="Notificações">
+          <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+        </button>
+
+          <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro">
+          <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+        </label>
+        </div>
+      </div>
+
+      
+      <div class="topbar-mobile-search" role="search">
+        <div class="search-bar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+
+          <input
+            type="search"
+            placeholder="Pesquisar disciplinas..."
+            aria-label="Pesquisar disciplinas"
+          />
+        </div>
+      </div>
+
+      
+      <main class="content">
+
+        <div class="atv-top-bar">
+
+          <div>
+            <h1 class="page-title">Atividades</h1>
+            <p class="page-subtitle">
+              Acompanhe seus prazos e entregas acadêmicas
+            </p>
+          </div>
+
+          <div class="atv-top-right">
+
+            <div class="select-wrap">
+              <select>
+                <option>Todas as Disciplinas</option>
+              </select>
+            </div>
+
+            <button class="btn-outline-gray">
+              Filtros
+            </button>
+
+          </div>
+        </div>
+
+        
+        <div class="tabs">
+          <button class="tab active">
+            Pendentes
+            <span class="tab-badge">4</span>
+          </button>
+
+          <button class="tab">Entregues</button>
+          <button class="tab">Atrasadas</button>
+        </div>
+
+        
+        <div class="activity-list">
+
+          
+          <div class="activity-card activity-urgent">
+
+            <div class="activity-info">
+
+              <div class="activity-tags">
+                <span class="tag-urgente">URGENTE</span>
+                <span class="activity-discipline">Design de Interfaces</span>
+              </div>
+
+              <h3 class="activity-title">
+                Protótipo de Alta Fidelidade – Case Study
+              </h3>
+
+              <p class="activity-desc">
+                Entrega do arquivo Figma e documentação técnica do sistema de design.
+              </p>
+
+            </div>
+
+            <div class="activity-deadline">
+              <span class="deadline-label">PRAZO</span>
+              <span class="deadline-value deadline-urgent">Hoje, 23:59</span>
+
+              <button class="btn-primary">
+                Entregar Agora
+              </button>
+            </div>
+
+          </div>
+
+          
+          <div class="activity-card">
+
+            <div class="activity-info">
+
+              <div class="activity-tags">
+                <span class="activity-discipline">
+                  Algoritmos Avançados
+                </span>
+              </div>
+
+              <h3 class="activity-title">
+                Lista de Exercícios 04 – Grafos e Heurísticas
+              </h3>
+
+              <p class="activity-desc">
+                Resolução comentada dos problemas propostos em sala de aula.
+              </p>
+
+            </div>
+
+            <div class="activity-deadline">
+              <span class="deadline-label">PRAZO</span>
+              <span class="deadline-value">15 Out, 18:00</span>
+
+              <button class="btn-outline">
+                Ver Detalhes
+              </button>
+            </div>
+
+          </div>
+
+          
+          <div class="activity-card">
+
+            <div class="activity-info">
+
+              <div class="activity-tags">
+                <span class="activity-discipline">
+                  Psicologia Cognitiva
+                </span>
+              </div>
+
+              <h3 class="activity-title">
+                Resenha Crítica: Percepção e Memória
+              </h3>
+
+              <p class="activity-desc">
+                Análise do capítulo 03 do livro base aplicado ao cotidiano digital.
+              </p>
+
+            </div>
+
+            <div class="activity-deadline">
+              <span class="deadline-label">PRAZO</span>
+              <span class="deadline-value">18 Out, 23:59</span>
+
+              <button class="btn-outline">
+                Ver Detalhes
+              </button>
+            </div>
+
+          </div>
+
+          
+          <div class="activity-card">
+
+            <div class="activity-info">
+
+              <div class="activity-tags">
+                <span class="activity-discipline">
+                  Sistemas Distribuídos
+                </span>
+              </div>
+
+              <h3 class="activity-title">
+                Projeto Semestral – Microserviços
+              </h3>
+
+              <p class="activity-desc">
+                Definição da arquitetura e primeira versão do repositório Git.
+              </p>
+
+            </div>
+
+            <div class="activity-deadline">
+              <span class="deadline-label">PRAZO</span>
+              <span class="deadline-value">22 Out, 09:00</span>
+
+              <button class="btn-outline">
+                Ver Detalhes
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </main>
+
+      
+      <footer class="footer">
+        <span>
+          © 2026 Ânima Educação – Todos os direitos reservados.
+        </span>
+
+        <div class="footer-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Ajuda</a>
+          <a href="#">Institucional</a>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
