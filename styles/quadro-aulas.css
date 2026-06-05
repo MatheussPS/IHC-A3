@@ -110,14 +110,17 @@
 .day-card {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
-  padding: 12px 10px 14px;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  gap: 2em;
   background: var(--bg-card);
-  min-height: 190px;
   transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.day-card span{
+  font-size: 1em;
 }
 
 .day-card:hover {

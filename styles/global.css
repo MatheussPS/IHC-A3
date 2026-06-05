@@ -108,44 +108,7 @@
   --tracking-widest: .12em;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-primary: #F9FAFB;
-    
-    --text-secondary: #D1D5DB;
-    
-    --text-muted: #9CA3AF;
-    
-    --border: #374151;
-    --bg-page: #111827;
-    --bg-card: #1F2937;
-    --bg-input: #374151;
-    --sidebar-bg: #1F2937;
 
-    --purple: #818CF8;
-    
-    --purple-dark: #A5B4FC;
-    --purple-active-bg: #312E81;
-    --purple-border: #4338CA;
-
-    --blue: #93C5FD;
-    --blue-bg: #1E3A5F;
-    --teal: #5EEAD4;
-    --teal-bg: #134E4A;
-    --teal-text: #5EEAD4;
-    --orange: #FCA574;
-    --orange-bg: #7C2D12;
-    --red: #FCA5A5;
-    --red-bg: #7F1D1D;
-    --green: #86EFAC;
-    --green-bg: #14532D;
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, .3);
-    --shadow: 0 1px 4px rgba(0, 0, 0, .4), 0 0 0 1px rgba(255, 255, 255, .04);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, .5);
-    --shadow-hover: 0 6px 20px rgba(129, 140, 248, .3);
-  }
-}
 
 #dark-check {
   display: none;
@@ -199,15 +162,17 @@ body:has(#dark-check:checked) .logo-img-white {
   display: block;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo-img-black {
-    display: none;
-  }
-
-  .logo-img-white {
-    display: block;
-  }
+body:has(#dark-check:checked) .nav-item svg.nav-icon {
+  color: #E5E7EB;
 }
+
+body:has(#dark-check:checked) .nav-item.active svg.nav-icon {
+  color: var(--purple);
+}
+
+
+
+
 
 html {
   scroll-behavior: smooth;
@@ -320,7 +285,6 @@ img {
   font-family: var(--font);
   color: var(--text-primary);
   width: 100%;
-  height: 2vh;
   line-height: var(--leading-tight);
 }
 
@@ -450,14 +414,23 @@ nav.nav-section {
   outline-offset: 2px;
 }
 
+.nav-item svg.nav-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  opacity: 1;
+  color: #111827;
+  transition: color var(--transition), opacity var(--transition);
+}
+
 .nav-item svg {
   flex-shrink: 0;
   opacity: .85;
 }
 
 .nav-item img.nav-icon {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   flex-shrink: 0;
   opacity: .85;
@@ -484,9 +457,19 @@ nav.nav-section {
   border-radius: 0 3px 3px 0;
 }
 
+.nav-item.active svg.nav-icon {
+  opacity: 1;
+  color: var(--purple);
+}
+
 .nav-item.active svg {
   opacity: 1;
   color: var(--purple);
+}
+
+.nav-item:hover svg.nav-icon {
+  opacity: 1;
+  color: var(--text-primary);
 }
 
 .nav-divider {

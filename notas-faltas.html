@@ -1,38 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ÃƒÅ“life Ã¢â‚¬â€œ Notas e Faltas</title>
+  <title>Ülife – Notas e Faltas</title>
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/global.css" />
   <link rel="stylesheet" href="styles/notas-faltas.css" />
 </head>
+
 <body>
 
-  
+
   <input type="checkbox" id="dark-check" aria-hidden="true" />
 
-  
+
   <input type="checkbox" id="sidebar-check" aria-hidden="true" />
 
-  
+
   <label class="sidebar-overlay" for="sidebar-check" aria-hidden="true"></label>
 
-  
+
   <header class="topbar" role="banner">
-    <a href="index.html" class="topbar-logo" aria-label="ÃƒÅ“life Ã¢â‚¬â€œ InÃƒÂ­cio">
-      <img src="img/logo-black.png" alt="ÃƒÅ“life" class="logo-img logo-img-black" />
-      <img src="img/logo-white.png" alt="ÃƒÅ“life" class="logo-img logo-img-white" />
+    <a href="index.html" class="topbar-logo" aria-label="Ülife – Início">
+      <img src="img/logo-black.png" alt="Ülife" class="logo-img logo-img-black" />
+      <img src="img/logo-white.png" alt="Ülife" class="logo-img logo-img-white" />
     </a>
     <div class="search-bar" role="search">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
       <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
     </div>
-    <div class="topbar-icons" role="toolbar" aria-label="AÃƒÂ§ÃƒÂµes">
-      <button class="icon-btn" aria-label="NotificaÃƒÂ§ÃƒÂµes">
+    <div class="topbar-icons" role="toolbar" aria-label="Ações">
+      <button class="icon-btn" aria-label="Notificações">
         <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;" />
       </button>
       <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro" role="switch">
@@ -41,311 +49,430 @@
     </div>
   </header>
 
-  
+
   <div class="page-shell">
 
-  
-  <aside class="sidebar" role="navigation" aria-label="Menu principal">
 
-    <nav class="nav-section" aria-label="Principal">
-      <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
-      <a href="index.html" class="nav-item">
-                <img src="img/minhas-ucs.png" alt="" class="nav-icon" aria-hidden="true" />
-                Minhas UCs
-            </a>
-      <a href="atividades.html" class="nav-item">
-                <img src="img/atividades.png" alt="" class="nav-icon" aria-hidden="true" />
-                Atividades
-            </a>
-      <a href="quadro-aulas.html" class="nav-item">
-                <img src="img/quadro-aulas.png" alt="" class="nav-icon" aria-hidden="true" />
-                Quadro de Aulas
-            </a>
-    </nav>
+    <aside class="sidebar" role="navigation" aria-label="Menu principal">
 
-    <div class="nav-divider"></div>
-
-    <nav class="nav-section" aria-label="Acadêmico">
-      <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
-      <a href="notas-faltas.html" class="nav-item active" aria-current="page">
-                <img src="img/aulas-faltas-selected.png" alt="" class="nav-icon" aria-hidden="true" />
-                Notas e Faltas
-            </a>
-      <a href="#" class="nav-item">
-        <img src="img/biblioteca.png" alt="" class="nav-icon" aria-hidden="true" />
-        Biblioteca
-      </a>
-    </nav>
-
-    <div class="nav-divider"></div>
-
-    <nav class="nav-section" aria-label="Administrativo">
-      <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
-      <a href="secretaria-virtual.html" class="nav-item">
-                <img src="img/secretaria.png" alt="" class="nav-icon" aria-hidden="true" />
-                Secretaria Virtual
-            </a>
-      <a href="#" class="nav-item">
-        <img src="img/documentos.png" alt="" class="nav-icon" aria-hidden="true" />
-        Documentos
-      </a>
-    </nav>
-
-    <div class="nav-divider"></div>
-
-    <nav class="nav-section" aria-label="Perfil">
-      <p class="nav-label" aria-hidden="true">PERFIL</p>
-      <a href="#" class="nav-item">
-        <img src="img/perfil.png" alt="" class="nav-icon" aria-hidden="true" />
-        Meu Perfil
-      </a>
-      <a href="#" class="nav-item">
-        <img src="img/config.png" alt="" class="nav-icon" aria-hidden="true" />
-        Configurações
-      </a>
-      <a href="#" class="nav-item">
-        <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
-        Ajuda
-      </a>
-    </nav>
-  </aside>
-
-  
-  <div class="main-wrapper">
-
-    
-    <div class="topbar-mobile-row" aria-label="CabeÃƒÂ§alho mobile">
-      <label class="sidebar-toggle-mobile" for="sidebar-check" aria-label="Abrir menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </label>
-      <div class="topbar-mobile-logo">
-        <a href="index.html" aria-label="ÃƒÅ“life Ã¢â‚¬â€œ InÃƒÂ­cio">
-          <img src="img/logo-black.png" alt="ÃƒÅ“life" class="logo-img logo-img-black" />
-          <img src="img/logo-white.png" alt="ÃƒÅ“life" class="logo-img logo-img-white" />
+      <nav class="nav-section" aria-label="Principal">
+        <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
+        <a href="index.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          Minhas UCs
         </a>
-      </div>
-      <div class="topbar-mobile-actions">
-        <button class="icon-btn has-dot" aria-label="NotificaÃƒÂ§ÃƒÂµes">
-          <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
-        </button>
-        <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro">
-          <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+        <a href="atividades.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+            <path d="M12 11h4" />
+            <path d="M12 16h4" />
+            <path d="M8 11h.01" />
+            <path d="M8 16h.01" />
+          </svg>
+          Atividades
+        </a>
+        <a href="quadro-aulas.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          Quadro de Aulas
+        </a>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <nav class="nav-section" aria-label="Acadêmico">
+        <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
+        <a href="notas-faltas.html" class="nav-item active" aria-current="page">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+          Notas e Faltas
+        </a>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <rect width="8" height="18" x="3" y="3" rx="1" />
+            <path d="M7 3v18" />
+            <path
+              d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
+          </svg>
+          Biblioteca
+        </a>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <nav class="nav-section" aria-label="Administrativo">
+        <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
+        <a href="secretaria-virtual.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <line x1="3" y1="22" x2="21" y2="22" />
+            <line x1="6" y1="18" x2="6" y2="11" />
+            <line x1="10" y1="18" x2="10" y2="11" />
+            <line x1="14" y1="18" x2="14" y2="11" />
+            <line x1="18" y1="18" x2="18" y2="11" />
+            <polygon points="12 2 20 7 4 7" />
+          </svg>
+          Secretaria Virtual
+        </a>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <line x1="10" y1="9" x2="8" y2="9" />
+          </svg>
+          Documentos
+        </a>
+      </nav>
+
+      <div class="nav-divider"></div>
+
+      <nav class="nav-section" aria-label="Perfil">
+        <p class="nav-label" aria-hidden="true">PERFIL</p>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          Meu Perfil
+        </a>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path
+              d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          Configurações
+        </a>
+        <a href="#" class="nav-item">
+          <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
+          Ajuda
+        </a>
+      </nav>
+    </aside>
+
+
+    <div class="main-wrapper">
+
+
+      <div class="topbar-mobile-row" aria-label="Cabeçalho mobile">
+        <label class="sidebar-toggle-mobile" for="sidebar-check" aria-label="Abrir menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
         </label>
-      </div>
-    </div>
-
-    
-    <div class="topbar-mobile-search" role="search">
-      <div class="search-bar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
-      </div>
-    </div>
-
-    
-    <main class="content">
-
-      <div class="notas-top-bar">
-        <div>
-          <h1 class="page-title">Notas e Faltas</h1>
-          <p class="page-subtitle">Acompanhe seu desempenho escolar</p>
-        </div>
-        <div class="notas-filters">
-          <div class="filter-group">
-            <label class="filter-label">PERÃƒÂODO</label>
-            <div class="select-wrap">
-              <select><option>2026.1 (Atual)</option></select>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </div>
-          <div class="filter-group">
-            <div class="select-wrap">
-              <select><option>Todas as Disciplinas</option></select>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="notas-table-card">
-        <div class="notas-table-header">
-          <span class="notas-table-title">Detalhamento por UC</span>
-          <a href="#" class="export-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Exportar PDF
+        <div class="topbar-mobile-logo">
+          <a href="index.html" aria-label="Ülife – Início">
+            <img src="img/logo-black.png" alt="Ülife" class="logo-img logo-img-black" />
+            <img src="img/logo-white.png" alt="Ülife" class="logo-img logo-img-white" />
           </a>
         </div>
-        <div class="notas-table-scroll">
-        <table class="notas-table">
-          <thead>
-            <tr>
-              <th class="col-uc">UNIDADE CURRICULAR</th>
-              <th class="col-nota">A1<br><small>(30)</small></th>
-              <th class="col-nota">A2<br><small>(30)</small></th>
-              <th class="col-nota">A3<br><small>(40)</small></th>
-              <th class="col-media">MÃƒâ€°DIA</th>
-              <th class="col-freq">FREQUÃƒÅ NCIA</th>
-              <th class="col-status">STATUS</th>
-              <th class="col-action"></th>
-            </tr>
-          </thead>
-          <tbody>
-
-            <tr>
-              <td class="uc-cell">
-                <span class="uc-name">Algoritmos e Estrutura de Dados</span>
-                <span class="uc-teacher">Prof. Ricardo Silva</span>
-              </td>
-              <td class="nota-cell">8.5</td>
-              <td class="nota-cell">9.0</td>
-              <td class="nota-cell">9.0</td>
-              <td class="media-cell media-purple">26.5</td>
-              <td class="freq-cell">
-                <div class="freq-bar-wrap">
-                  <div class="freq-bar"><div class="freq-fill" style="width:95%"></div></div>
-                  <span>95%</span>
-                </div>
-              </td>
-              <td><span class="status-badge badge-aprovado">APROVADO</span></td>
-              <td>
-                <button class="btn-more">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="uc-cell">
-                <span class="uc-name">CÃƒÂ¡lculo Diferencial e Integral I</span>
-                <span class="uc-teacher">ProfÃ‚Âª Maria Oliveira</span>
-              </td>
-              <td class="nota-cell">6.5</td>
-              <td class="nota-cell">7.2</td>
-              <td class="nota-cell">7.2</td>
-              <td class="media-cell media-purple">20.9</td>
-              <td class="freq-cell">
-                <div class="freq-bar-wrap">
-                  <div class="freq-bar"><div class="freq-fill" style="width:88%"></div></div>
-                  <span>88%</span>
-                </div>
-              </td>
-              <td><span class="status-badge badge-cursando">CURSANDO</span></td>
-              <td>
-                <button class="btn-more">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="uc-cell">
-                <span class="uc-name">Arquitetura de Computadores</span>
-                <span class="uc-teacher">Prof. Carlos Santos</span>
-              </td>
-              <td class="nota-cell">9.5</td>
-              <td class="nota-cell">10.0</td>
-              <td class="nota-cell">10.0</td>
-              <td class="media-cell media-purple">29.5</td>
-              <td class="freq-cell">
-                <div class="freq-bar-wrap">
-                  <div class="freq-bar"><div class="freq-fill" style="width:100%"></div></div>
-                  <span>100%</span>
-                </div>
-              </td>
-              <td><span class="status-badge badge-aprovado">APROVADO</span></td>
-              <td>
-                <button class="btn-more">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
-                </button>
-              </td>
-            </tr>
-
-            <tr>
-              <td class="uc-cell">
-                <span class="uc-name">Fundamentos de Design Digital</span>
-                <span class="uc-teacher">ProfÃ‚Âª Ana Beatriz</span>
-              </td>
-              <td class="nota-cell">7.8</td>
-              <td class="nota-cell">Ã¢â‚¬â€œ</td>
-              <td class="nota-cell">Ã¢â‚¬â€œ</td>
-              <td class="media-cell media-purple">7.8</td>
-              <td class="freq-cell">
-                <div class="freq-bar-wrap">
-                  <div class="freq-bar"><div class="freq-fill" style="width:94%"></div></div>
-                  <span>94%</span>
-                </div>
-              </td>
-              <td><span class="status-badge badge-cursando">CURSANDO</span></td>
-              <td>
-                <button class="btn-more">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
-                </button>
-              </td>
-            </tr>
-
-          </tbody>
-        </table>
+        <div class="topbar-mobile-actions">
+          <button class="icon-btn has-dot" aria-label="Notificações">
+            <img src="img/notificacao.png" alt="" aria-hidden="true"
+              style="width:24px;height:24px;object-fit:contain;" />
+          </button>
+          <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro">
+            <img src="img/handle-mode.png" alt="" aria-hidden="true"
+              style="width:24px;height:24px;object-fit:contain;" />
+          </label>
         </div>
       </div>
 
-      
-      <div class="notas-bottom-row">
 
-        
-        <div class="criterios-card">
-          <h3 class="criterios-title">CritÃƒÂ©rios de AprovaÃƒÂ§ÃƒÂ£o</h3>
-          <div class="criterios-items">
-            <div class="criterio-item">
-              <div class="criterio-icon criterio-icon-purple">
-                <img src="img/criterios-approvacao.png" alt="" aria-hidden="true" style="width:22px;height:22px;object-fit:contain;" />
-              </div>
-              <div>
-                <span class="criterio-label">Média para aprovação</span>
-                <strong class="criterio-value">70 pontos</strong>
-                <p class="criterio-desc">Calculada pela soma simples das avaliações A1, A2 e A3.</p>
+      <div class="topbar-mobile-search" role="search">
+        <div class="search-bar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
+        </div>
+      </div>
+
+
+      <main class="content">
+
+        <div class="notas-top-bar">
+          <div>
+            <h1 class="page-title">Notas e Faltas</h1>
+            <p class="page-subtitle">Acompanhe seu desempenho escolar</p>
+          </div>
+          <div class="notas-filters">
+            <div class="filter-group">
+              <label class="filter-label">PERÍODO</label>
+              <div class="select-wrap">
+                <select>
+                  <option>2026.1 (Atual)</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
               </div>
             </div>
-            <div class="criterio-divider"></div>
-            <div class="criterio-item">
-              <div class="criterio-icon criterio-icon-blue">
-                <img src="img/frequecia.png" alt="" aria-hidden="true" style="width:22px;height:22px;object-fit:contain;" />
-              </div>
-              <div>
-                <span class="criterio-label">Frequência Mínima</span>
-                <strong class="criterio-value">75% das aulas</strong>
-                <p class="criterio-desc">O não cumprimento resulta em reprovação automática</p>
+            <div class="filter-group">
+              <div class="select-wrap">
+                <select>
+                  <option>Todas as Disciplinas</option>
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
               </div>
             </div>
           </div>
         </div>
 
-        
-        <div class="ajuda-card">
-          <h3 class="ajuda-title">Precisa de Ajuda?</h3>
-          <p class="ajuda-desc">Se notar alguma divergÃƒÂªncia em suas notas ou frequÃƒÂªncias, abra um requerimento para revisÃƒÂ£o acadÃƒÂªmica.</p>
-          <button class="btn-outline-white" style="margin-top:16px; width:100%; justify-content:center;">
-            Abrir Requerimento
-          </button>
+
+        <div class="notas-table-card">
+          <div class="notas-table-header">
+            <span class="notas-table-title">Detalhamento por UC</span>
+            <a href="#" class="export-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Exportar PDF
+            </a>
+          </div>
+          <div class="notas-table-scroll">
+            <table class="notas-table">
+              <thead>
+                <tr>
+                  <th class="col-uc">UNIDADE CURRICULAR</th>
+                  <th class="col-nota">A1<br><small>(30)</small></th>
+                  <th class="col-nota">A2<br><small>(30)</small></th>
+                  <th class="col-nota">A3<br><small>(40)</small></th>
+                  <th class="col-media">MÉDIA</th>
+                  <th class="col-freq">FREQUÊNCIA</th>
+                  <th class="col-status">STATUS</th>
+                  <th class="col-action"></th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="uc-cell">
+                    <span class="uc-name">Algoritmos e Estrutura de Dados</span>
+                    <span class="uc-teacher">Prof. Ricardo Silva</span>
+                  </td>
+                  <td class="nota-cell">8.5</td>
+                  <td class="nota-cell">9.0</td>
+                  <td class="nota-cell">9.0</td>
+                  <td class="media-cell media-purple">26.5</td>
+                  <td class="freq-cell">
+                    <div class="freq-bar-wrap">
+                      <div class="freq-bar">
+                        <div class="freq-fill" style="width:95%"></div>
+                      </div>
+                      <span>95%</span>
+                    </div>
+                  </td>
+                  <td><span class="status-badge badge-aprovado">APROVADO</span></td>
+                  <td>
+                    <button class="btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="uc-cell">
+                    <span class="uc-name">Cálculo Diferencial e Integral I</span>
+                    <span class="uc-teacher">Profª Maria Oliveira</span>
+                  </td>
+                  <td class="nota-cell">6.5</td>
+                  <td class="nota-cell">7.2</td>
+                  <td class="nota-cell">7.2</td>
+                  <td class="media-cell media-purple">20.9</td>
+                  <td class="freq-cell">
+                    <div class="freq-bar-wrap">
+                      <div class="freq-bar">
+                        <div class="freq-fill" style="width:88%"></div>
+                      </div>
+                      <span>88%</span>
+                    </div>
+                  </td>
+                  <td><span class="status-badge badge-cursando">CURSANDO</span></td>
+                  <td>
+                    <button class="btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="uc-cell">
+                    <span class="uc-name">Arquitetura de Computadores</span>
+                    <span class="uc-teacher">Prof. Carlos Santos</span>
+                  </td>
+                  <td class="nota-cell">9.5</td>
+                  <td class="nota-cell">10.0</td>
+                  <td class="nota-cell">10.0</td>
+                  <td class="media-cell media-purple">29.5</td>
+                  <td class="freq-cell">
+                    <div class="freq-bar-wrap">
+                      <div class="freq-bar">
+                        <div class="freq-fill" style="width:100%"></div>
+                      </div>
+                      <span>100%</span>
+                    </div>
+                  </td>
+                  <td><span class="status-badge badge-aprovado">APROVADO</span></td>
+                  <td>
+                    <button class="btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="uc-cell">
+                    <span class="uc-name">Fundamentos de Design Digital</span>
+                    <span class="uc-teacher">Profª Ana Beatriz</span>
+                  </td>
+                  <td class="nota-cell">7.8</td>
+                  <td class="nota-cell">–</td>
+                  <td class="nota-cell">–</td>
+                  <td class="media-cell media-purple">7.8</td>
+                  <td class="freq-cell">
+                    <div class="freq-bar-wrap">
+                      <div class="freq-bar">
+                        <div class="freq-fill" style="width:94%"></div>
+                      </div>
+                      <span>94%</span>
+                    </div>
+                  </td>
+                  <td><span class="status-badge badge-cursando">CURSANDO</span></td>
+                  <td>
+                    <button class="btn-more">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="5" r="1" />
+                        <circle cx="12" cy="12" r="1" />
+                        <circle cx="12" cy="19" r="1" />
+                      </svg>
+                    </button>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
         </div>
 
-      </div>
 
-    </main>
+        <div class="notas-bottom-row">
 
-    
-    <footer class="footer">
-      <span>Ã‚Â© 2026 Ãƒâ€šnima EducaÃƒÂ§ÃƒÂ£o Ã¢â‚¬â€œ Todos os direitos reservados.</span>
-      <div class="footer-links">
-        <a href="#">Privacidade</a>
-        <a href="#">Termos de Uso</a>
-        <a href="#">Ajuda</a>
-        <a href="#">Institucional</a>
-      </div>
-    </footer>
-  </div>
+
+          <div class="criterios-card">
+            <h3 class="criterios-title">Critérios de Aprovação</h3>
+            <div class="criterios-items">
+              <div class="criterio-item">
+                <div class="criterio-icon criterio-icon-purple">
+                  <img src="img/criterios-approvacao.png" alt="" aria-hidden="true"
+                    style="width:22px;height:22px;object-fit:contain;" />
+                </div>
+                <div>
+                  <span class="criterio-label">Média para aprovação</span>
+                  <strong class="criterio-value">70 pontos</strong>
+                  <p class="criterio-desc">Calculada pela soma simples das avaliações A1, A2 e A3.</p>
+                </div>
+              </div>
+              <div class="criterio-divider"></div>
+              <div class="criterio-item">
+                <div class="criterio-icon criterio-icon-blue">
+                  <img src="img/frequecia.png" alt="" aria-hidden="true"
+                    style="width:22px;height:22px;object-fit:contain;" />
+                </div>
+                <div>
+                  <span class="criterio-label">Frequência Mínima</span>
+                  <strong class="criterio-value">75% das aulas</strong>
+                  <p class="criterio-desc">O não cumprimento resulta em reprovação automática</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="ajuda-card">
+            <h3 class="ajuda-title">Precisa de Ajuda?</h3>
+            <p class="ajuda-desc">Se notar alguma divergência em suas notas ou frequências, abra um requerimento para
+              revisão acadêmica.</p>
+            <button class="btn-outline-white" style="margin-top:16px; width:100%; justify-content:center;">
+              Abrir Requerimento
+            </button>
+          </div>
+
+        </div>
+
+      </main>
+
+
+      <footer class="footer">
+        <span>© 2026 Ânima Educação – Todos os direitos reservados.</span>
+        <div class="footer-links">
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Ajuda</a>
+          <a href="#">Institucional</a>
+        </div>
+      </footer>
+    </div>
 
   </div>
 
 </body>
+
 </html>

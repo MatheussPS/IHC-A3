@@ -1,17 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Úlife – Conteúdo</title>
+  <title>Conteúdo</title>
+
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles/global.css" />
   <link rel="stylesheet" href="styles/conteudo.css" />
@@ -19,63 +20,33 @@
 
 <body>
 
-  
+
   <input type="checkbox" id="dark-check" aria-hidden="true" />
 
-  
+
   <input type="checkbox" id="sidebar-check" aria-hidden="true" />
 
-  
-  <label
-    class="sidebar-overlay"
-    for="sidebar-check"
-    aria-hidden="true"
-  ></label>
 
-  
+  <label class="sidebar-overlay" for="sidebar-check" aria-hidden="true"></label>
+
+
   <header class="topbar" role="banner">
 
-    <a
-      href="index.html"
-      class="topbar-logo"
-      aria-label="Úlife – Início"
-    >
-      <img
-        src="img/logo-black.png"
-        alt="Úlife"
-        class="logo-img logo-img-black"
-      />
+    <a href="index.html" class="topbar-logo" aria-label="Úlife – Início">
+      <img src="img/logo-black.png" alt="Úlife" class="logo-img logo-img-black" />
 
-      <img
-        src="img/logo-white.png"
-        alt="Úlife"
-        class="logo-img logo-img-white"
-      />
+      <img src="img/logo-white.png" alt="Úlife" class="logo-img logo-img-white" />
     </a>
 
     <div class="search-bar" role="search">
 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="15"
-        height="15"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-      >
-        <circle cx="11" cy="11" r="8"/>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
       </svg>
 
-      <input
-        type="search"
-        placeholder="Pesquisar disciplinas..."
-        aria-label="Pesquisar disciplinas"
-      />
+      <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
     </div>
 
     <div class="topbar-icons" role="toolbar" aria-label="Ações">
@@ -84,31 +55,12 @@
         <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:28px;height:28px;object-fit:contain;" />
       </button>
 
-      <label
-        class="dark-toggle"
-        for="dark-check"
-        aria-label="Alternar tema escuro"
-        role="switch"
-      >
+      <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro" role="switch">
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          aria-hidden="true"
-        >
-          <circle cx="12" cy="12" r="10"/>
-          <path
-            d="M12 2a10 10 0 0 0 0 20V2z"
-            fill="currentColor"
-            opacity=".5"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 2a10 10 0 0 0 0 20V2z" fill="currentColor" opacity=".5" />
         </svg>
 
       </label>
@@ -116,127 +68,160 @@
     </div>
   </header>
 
-  
+
   <div class="page-shell">
 
-    
-  <aside class="sidebar" role="navigation" aria-label="Menu principal">
 
-    <nav class="nav-section" aria-label="Principal">
-      <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
-      <a href="index.html" class="nav-item active" aria-current="page">
-                <img src="img/minhas-ucs-selected.png" alt="" class="nav-icon" aria-hidden="true" />
-                Minhas UCs
-            </a>
-      <a href="atividades.html" class="nav-item">
-                <img src="img/atividades.png" alt="" class="nav-icon" aria-hidden="true" />
-                Atividades
-            </a>
-      <a href="quadro-aulas.html" class="nav-item">
-                <img src="img/quadro-aulas.png" alt="" class="nav-icon" aria-hidden="true" />
-                Quadro de Aulas
-            </a>
-    </nav>
+    <aside class="sidebar" role="navigation" aria-label="Menu principal">
 
-    <div class="nav-divider"></div>
+      <nav class="nav-section" aria-label="Principal">
+        <p class="nav-label" aria-hidden="true">PRINCIPAL</p>
+        <a href="index.html" class="nav-item active" aria-current="page">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          Minhas UCs
+        </a>
+        <a href="atividades.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+            <path d="M12 11h4" />
+            <path d="M12 16h4" />
+            <path d="M8 11h.01" />
+            <path d="M8 16h.01" />
+          </svg>
+          Atividades
+        </a>
+        <a href="quadro-aulas.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <rect width="18" height="18" x="3" y="4" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          Quadro de Aulas
+        </a>
+      </nav>
 
-    <nav class="nav-section" aria-label="Acadêmico">
-      <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
-      <a href="notas-faltas.html" class="nav-item">
-                <img src="img/aulas-faltas.png" alt="" class="nav-icon" aria-hidden="true" />
-                Notas e Faltas
-            </a>
-      <a href="#" class="nav-item">
-        <img src="img/biblioteca.png" alt="" class="nav-icon" aria-hidden="true" />
-        Biblioteca
-      </a>
-    </nav>
+      <div class="nav-divider"></div>
 
-    <div class="nav-divider"></div>
+      <nav class="nav-section" aria-label="Acadêmico">
+        <p class="nav-label" aria-hidden="true">ACADÊMICO</p>
+        <a href="notas-faltas.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+          Notas e Faltas
+        </a>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <rect width="8" height="18" x="3" y="3" rx="1" />
+            <path d="M7 3v18" />
+            <path
+              d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z" />
+          </svg>
+          Biblioteca
+        </a>
+      </nav>
 
-    <nav class="nav-section" aria-label="Administrativo">
-      <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
-      <a href="secretaria-virtual.html" class="nav-item">
-                <img src="img/secretaria.png" alt="" class="nav-icon" aria-hidden="true" />
-                Secretaria Virtual
-            </a>
-      <a href="#" class="nav-item">
-        <img src="img/documentos.png" alt="" class="nav-icon" aria-hidden="true" />
-        Documentos
-      </a>
-    </nav>
+      <div class="nav-divider"></div>
 
-    <div class="nav-divider"></div>
+      <nav class="nav-section" aria-label="Administrativo">
+        <p class="nav-label" aria-hidden="true">ADMINISTRATIVO</p>
+        <a href="secretaria-virtual.html" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <line x1="3" y1="22" x2="21" y2="22" />
+            <line x1="6" y1="18" x2="6" y2="11" />
+            <line x1="10" y1="18" x2="10" y2="11" />
+            <line x1="14" y1="18" x2="14" y2="11" />
+            <line x1="18" y1="18" x2="18" y2="11" />
+            <polygon points="12 2 20 7 4 7" />
+          </svg>
+          Secretaria Virtual
+        </a>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="16" y1="13" x2="8" y2="13" />
+            <line x1="16" y1="17" x2="8" y2="17" />
+            <line x1="10" y1="9" x2="8" y2="9" />
+          </svg>
+          Documentos
+        </a>
+      </nav>
 
-    <nav class="nav-section" aria-label="Perfil">
-      <p class="nav-label" aria-hidden="true">PERFIL</p>
-      <a href="#" class="nav-item">
-        <img src="img/perfil.png" alt="" class="nav-icon" aria-hidden="true" />
-        Meu Perfil
-      </a>
-      <a href="#" class="nav-item">
-        <img src="img/config.png" alt="" class="nav-icon" aria-hidden="true" />
-        Configurações
-      </a>
-      <a href="#" class="nav-item">
-        <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
-        Ajuda
-      </a>
-    </nav>
-  </aside>
+      <div class="nav-divider"></div>
 
-    
+      <nav class="nav-section" aria-label="Perfil">
+        <p class="nav-label" aria-hidden="true">PERFIL</p>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          Meu Perfil
+        </a>
+        <a href="#" class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="nav-icon"
+            aria-hidden="true">
+            <path
+              d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+          Configurações
+        </a>
+        <a href="#" class="nav-item">
+          <img src="img/ajuda.png" alt="" class="nav-icon" aria-hidden="true" />
+          Ajuda
+        </a>
+      </nav>
+    </aside>
+
+
     <div class="main-wrapper">
 
-      
-      <div
-        class="topbar-mobile-row"
-        aria-label="Cabeçalho mobile"
-      >
 
-        <label
-          class="sidebar-toggle-mobile"
-          for="sidebar-check"
-          aria-label="Abrir menu"
-        >
+      <div class="topbar-mobile-row" aria-label="Cabeçalho mobile">
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
+        <label class="sidebar-toggle-mobile" for="sidebar-check" aria-label="Abrir menu">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
 
         </label>
 
         <div class="topbar-mobile-logo">
 
-          <a
-            href="index.html"
-            aria-label="Úlife – Início"
-          >
+          <a href="index.html" aria-label="Úlife – Início">
 
-            <img
-              src="img/logo-black.png"
-              alt="Úlife"
-              class="logo-img logo-img-black"
-            />
+            <img src="img/logo-black.png" alt="Úlife" class="logo-img logo-img-black" />
 
-            <img
-              src="img/logo-white.png"
-              alt="Úlife"
-              class="logo-img logo-img-white"
-            />
+            <img src="img/logo-white.png" alt="Úlife" class="logo-img logo-img-white" />
 
           </a>
 
@@ -244,58 +229,39 @@
 
         <div class="topbar-mobile-actions">
 
-          <button
-            class="icon-btn has-dot"
-            aria-label="Notificações"
-          >
-            <img src="img/notificacao.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+          <button class="icon-btn has-dot" aria-label="Notificações">
+            <img src="img/notificacao.png" alt="" aria-hidden="true"
+              style="width:24px;height:24px;object-fit:contain;" />
           </button>
 
-          <label
-            class="dark-toggle"
-            for="dark-check"
-            aria-label="Alternar tema escuro"
-          >
-            <img src="img/handle-mode.png" alt="" aria-hidden="true" style="width:24px;height:24px;object-fit:contain;" />
+          <label class="dark-toggle" for="dark-check" aria-label="Alternar tema escuro">
+            <img src="img/handle-mode.png" alt="" aria-hidden="true"
+              style="width:24px;height:24px;object-fit:contain;" />
           </label>
 
         </div>
       </div>
 
-      
+
       <div class="topbar-mobile-search" role="search">
 
         <div class="search-bar">
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-          >
-            <circle cx="11" cy="11" r="8"/>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
           </svg>
 
-          <input
-            type="search"
-            placeholder="Pesquisar disciplinas..."
-            aria-label="Pesquisar disciplinas"
-          />
+          <input type="search" placeholder="Pesquisar disciplinas..." aria-label="Pesquisar disciplinas" />
 
         </div>
       </div>
 
-      
+
       <main class="content">
 
-        
+
         <nav class="breadcrumb">
 
           <a href="index.html">
@@ -316,7 +282,7 @@
 
         </nav>
 
-        
+
         <div class="conteudo-header">
 
           <h1 class="page-title">
@@ -325,18 +291,9 @@
 
           <button class="btn-primary">
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
 
             Fale com nossos educadores
@@ -345,7 +302,7 @@
 
         </div>
 
-        
+
         <div class="tabs">
 
           <button class="tab active">
@@ -362,7 +319,7 @@
 
         </div>
 
-        
+
         <div class="content-section">
 
           <div class="section-header">
@@ -381,18 +338,9 @@
 
             <div class="lesson-icon lesson-icon-teal">
 
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
               </svg>
 
             </div>
@@ -405,7 +353,7 @@
 
         </div>
 
-        
+
         <div class="content-section">
 
           <div class="section-header">
@@ -414,19 +362,10 @@
 
               <div class="unit-icon">
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                 </svg>
 
               </div>
@@ -440,10 +379,7 @@
             <div class="section-header-right">
 
               <div class="unit-progress-bar">
-                <div
-                  class="unit-progress-fill"
-                  style="width:100%"
-                ></div>
+                <div class="unit-progress-fill" style="width:100%"></div>
               </div>
 
               <span class="section-count">
@@ -454,7 +390,7 @@
 
           </div>
 
-          
+
 
           <div class="lesson-item">
             <div class="lesson-check checked"></div>
@@ -544,7 +480,7 @@
 
       </main>
 
-      
+
       <footer class="footer">
 
         <span>
@@ -564,4 +500,5 @@
   </div>
 
 </body>
+
 </html>

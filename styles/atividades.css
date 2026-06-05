@@ -20,6 +20,10 @@
   gap: 12px;
 }
 
+.btn-outline-gray{
+  border-radius: var(--radius-lg);
+}
+
 .activity-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
