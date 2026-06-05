@@ -157,8 +157,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  
-  filter: var(--img-filter, none);
+  filter: brightness(0.3);
 }
 
 .day-card-type {
@@ -221,10 +220,6 @@
 
 body:has(#dark-check:checked) .day-card-icon img {
   filter: invert(1) brightness(1.8);
-}
-
-@media (prefers-color-scheme: dark) {
-  .day-card-icon img { filter: invert(1) brightness(1.8); }
 }
 
 .bottom-row {
