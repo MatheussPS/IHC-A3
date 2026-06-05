@@ -310,6 +310,15 @@ img {
   border-radius: 3px;
 }
 
+.sidebar-logo {
+  display: none;
+  padding: 16px 16px 8px;
+}
+
+.sidebar-logo .logo-img {
+  height: 36px;
+}
+
 nav.nav-section {
   padding: 0 8px;
 }
@@ -784,6 +793,10 @@ nav.nav-section {
     height: 100vh;
     z-index: 200;
     transform: translateX(-100%);
+  }
+
+  .sidebar-logo {
+    display: block;
   }
 
   #sidebar-check:checked~.page-shell .sidebar {
